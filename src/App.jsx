@@ -1,4 +1,6 @@
 import ListaTareas from "./components/ListaTareas";
+import { ThemeProvider } from "./components/ThemeProvider";
+import { Contenido } from "./components/contenido";
 
 function App() {
   return(

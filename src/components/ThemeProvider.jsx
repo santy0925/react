@@ -7,4 +7,10 @@ export function ThemeProvider ({ children }) {
     const toggleTema = () => {
         setTema((prev) => (prev === "claro" ? "oscuro" : "claro"));
     }
+
+    return  (
+        <ThemeContext.Provider value={{ tema, toggleTema}}>
+            {children}
+        </ThemeContext.Provider>
+    )
 }
